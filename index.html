@@ -1,50 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Hydrogen Energy Charger Station</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hydrogen Energy Charger Station Startup</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f1f1f1;
+			font-size: 16px;
+			line-height: 1.5;
 			margin: 0;
 			padding: 0;
 		}
-		header {
-			background-color: #0077be;
+		.banner {
+			background-image: url('images/banner-1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			color: #fff;
-			padding: 20px;
 			text-align: center;
-			font-size: 32px;
-			font-weight: bold;
 		}
-		main {
-			margin: 20px;
-			padding: 20px;
-			background-color: #fff;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		.banner h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
 		}
-		h1 {
+		.banner p {
 			font-size: 24px;
-			color: #0077be;
 		}
-		p {
+		.section {
+			padding: 80px 0;
+			text-align: center;
+		}
+		.section h2 {
+			font-size: 36px;
+			margin-bottom: 40px;
+		}
+		.section p {
+			font-size: 18px;
+			line-height: 1.8;
+			margin-bottom: 30px;
+		}
+		.section ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.section li {
+			margin: 0 20px;
+		}
+		.section li a {
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+			border-bottom: 2px solid transparent;
+		}
+		.section li a:hover {
+			border-bottom-color: #3EA3B3;
+			color: #3EA3B3;
+		}
+		.contact-form {
+			background-color: #F5F5F5;
+			padding: 80px 0;
+		}
+		.form-heading {
+			font-size: 36px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		form input[type="text"],
+		form input[type="email"],
+		form textarea {
+			width: 100%;
+			padding: 15px;
+			border: none;
+			background-color: #fff;
+			margin-bottom: 20px;
+			border-radius: 4px;
 			font-size: 16px;
-			line-height: 1.5;
+			color: #333;
 		}
-	</style>
+		form textarea {
+			height: 150px;
+		}
+		form input[type="submit"] {
+			background-color: #3EA3B3;
+			color: #fff;
+			border: none;
+			padding: 15px 30px;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		form input[type="submit"]:hover {
+			background-color: #26707B;
+		}
+	
+</style>
 </head>
 <body>
 	<header>
-		Hydrogen Energy Charger Station
+		<div class="banner">
+			<h1>Hydrogen Energy Charger Station Startup</h1>
+			<p>Revolutionizing the way we power our cars.</p>
+		</div>
 	</header>
-	<main>
-		<h1>Welcome to our startup</h1>
-		<p>We are dedicated to providing sustainable energy solutions for the transportation industry. Our Hydrogen Energy Charger Station is a state-of-the-art charging station that uses hydrogen fuel cells to generate electricity for electric vehicles. </p>
-		<p>Our mission is to reduce carbon emissions and promote a cleaner environment for future generations. We believe that hydrogen fuel cell technology is the future of sustainable energy and we are committed to making it accessible to everyone.</p>
-		<p>Thank you for considering our startup for your energy needs. Please feel free to contact us if you have any questions or would like to learn more about our technology.</p>
-	</main>
-</body>
-</html>
+    <section class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a startup dedicated to providing clean and sustainable energy solutions for the future. Our hydrogen energy charger station is designed to make it easy and convenient for people to power their cars without harming the environment.</p>
+            <ul>
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Our Values</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Our Technology</h2>
+            <p>Our hydrogen energy charger station uses advanced technology to convert hydrogen into electricity, providing a clean and sustainable source of power for electric cars. With fast charging times and zero emissions, it's the future of clean transportation.</p>
+            <ul>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="form-heading">Contact Us If Interested In Our Product</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+    </body>
+    </html>
