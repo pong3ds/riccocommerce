@@ -155,5 +155,37 @@
             </form>
         </div>
     </section>
+
+    <script>
+        // select the form element
+        const form = document.querySelector('form');
+
+        // define the Zapier webhook URL
+        const webhookUrl = 'https://hooks.zapier.com/hooks/catch/1999698/34utmdn/';
+
+        // add an event listener to the form's submit event
+        form.addEventListener('submit', async (event) => {
+        // prevent the default form submission behavior
+        event.preventDefault();
+
+        // create a new FormData object to store the form data
+        const formData = new FormData(form);
+
+        try {
+            // send the form data to the Zapier webhook using the fetch function
+            const response = await fetch(webhookUrl, {
+            method: 'POST',
+            body: formData
+            });
+
+            // log the response to the console
+            alert('Form submission successful')
+        } catch (error) {
+            // log any errors to the console
+            alert('Error submitting form ' + error);
+        }
+        });
+
+    </script>
     </body>
     </html>
